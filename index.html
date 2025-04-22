@@ -60,7 +60,33 @@
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
-    </main>
+    
+<section style="margin-top: 60px;">
+    <h2>🗣 Submit Your AI Experience</h2>
+    <p>If you’ve had issues with ChatGPT or other AI tools, share your story. This site collects real user experiences to expose flaws, raise awareness, and build public accountability. Upload links only — Formspree Free does not support direct file uploads.</p>
+    <form action="https://formspree.io/f/xeogqjwp" method="POST">
+        <label for="email">Your Email (optional):</label><br>
+        <input type="email" name="email" placeholder="you@example.com"><br><br>
+
+        <label for="category">Type of Failure:</label><br>
+        <select name="category" required>
+            <option value="writing">Writing Output</option>
+            <option value="code">Code Generation</option>
+            <option value="export">File/Export Error</option>
+            <option value="misinfo">Misinformation / Inaccuracy</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="message">Describe what happened:</label><br>
+        <textarea name="message" rows="6" placeholder="Explain your experience..." required></textarea><br>
+
+        <label for="link">Link to Proof (Google Drive, Imgur, etc.):</label><br>
+        <input type="url" name="link" placeholder="https://yourlink.com"><br><br>
+
+        <button type="submit">Submit My Experience</button>
+    </form>
+</section>
+</main>
     <footer>
         <p>© 2025 Nicholas Wandtke | Vibe Vault LLC</p>
     </footer>
